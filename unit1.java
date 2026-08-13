@@ -43,7 +43,39 @@ public class unit1 {
 
         userInput.nextLine(); // clear the integer buffer return to string
 
+        // assignment operators (+, -, *, /, %)
+        System.out.println(7/4); // int and int will return an int
+        System.out.println(7.0/4); // double and an integer will return a double
 
+        System.out.println(5 % 7.0); // modulus returns remainder of the division, returns double
+        
+        //System.out.println(7/0); // zero division error
+
+        // order of operations - PEMDAS
+        System.out.println( (5*45.0) * 2 / (4+11) - 15);
+
+        // compound assignment operators (+=, -=, *=, /=, %=)
+        int number = 0;
+        System.out.println(number);
+        number += 10; // number = number + 10
+        System.out.println(number);
+        number -= 50; // number = number - 50
+        System.out.println(number);
+        number *= 80; // number = number * 80
+        System.out.println(number);
+        number /= 100; // number = number / 100
+        System.out.println(number);
+        number %= 60; // number = number % 60
+        System.out.println(number);
+
+        number++; // number += 1
+        System.out.println(number);
+        number--; // number -= 1
+        System.out.println(number);
+
+        System.out.println((double) 7/4); // type casting 7 as a double value -> 7.0
 
     }
+
+
 }
