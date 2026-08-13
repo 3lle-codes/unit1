@@ -74,6 +74,22 @@ public class unit1 {
         System.out.println(number);
 
         System.out.println((double) 7/4); // type casting 7 as a double value -> 7.0
+        System.out.println((double) (9/4));
+
+        System.out.println((int) (3.75 * 8)); // type cast as 30 instead of 30.00
+
+        // overflow error
+        int max = Integer.MAX_VALUE; 
+        System.out.print(max); // 2147483647
+        max++;
+        System.out.print(max); // -2147483648, flips to the negative from overflow error
+
+
+        int min = Integer.MIN_VALUE;
+        System.out.print(min); // -2147483648
+        min--;
+        System.out.print(min); // 2147483647, flips to the positive from overflow error
+        
 
     }
 
